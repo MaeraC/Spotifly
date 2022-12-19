@@ -1,0 +1,93 @@
+body {
+  font-family: "Roboto";
+  background: #1d1d1d;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 30%;
+  height: 100vh;
+  padding: 20px;
+  width: 25%;
+  background-color: black;
+}
+.header__nav__logoWhite {
+  display: flex;
+  align-items: center;
+}
+.header__nav__logoWhite img {
+  margin-right: 5px;
+  width: 45px;
+}
+.header__nav__logoWhite h1 {
+  font-size: 25px;
+}
+.header__nav__menu {
+  list-style: none;
+  margin: 30px 0;
+}
+.header__nav__menu li a {
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  align-items: center;
+  margin: 15px 0;
+  color: #C9C9C9;
+  text-decoration: none;
+}
+.header__nav__menu li a img {
+  margin-right: 10px;
+  width: 28px;
+}
+.header__nav__menu li a:hover {
+  color: white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.header__nav__menu .add-border {
+  margin-bottom: 40px;
+}
+
+.play-bar-component__play-bar {
+  background: #1d1d1d;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-bar-component__play-bar__play-music {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.play-bar-component__play-bar__play-music ul {
+  display: flex;
+  list-style: none;
+  width: 30%;
+  justify-content: space-between;
+}
+.play-bar-component__play-bar__play-music__play-duration {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 20px;
+}
+.play-bar-component__play-bar__play-music__play-duration div {
+  height: 4px;
+  background: #C7C7C7;
+  width: 500px;
+  margin: 0 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+{
+  "name": "spotifly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch style/style.scss:style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaeraC/Spotifly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaeraC/Spotifly/issues"
+  },
+  "homepage": "https://github.com/MaeraC/Spotifly#readme"
+}
