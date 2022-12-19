@@ -6,11 +6,11 @@ const title                 = document.createElement("h1");
 const menu                  = document.createElement("ul");
 
 const arrayMenu             = [
-    { "icons": "../assets/icons/home-icon.png", "items": "Accueil" }, 
-    { "icons": "../assets/icons/search-icon.png", "items": "Rechercher" }, 
-    { "icons": "../assets/icons/bibli-icon.png", "items": "Bibliothèque" }, 
-    { "icons": "../assets/icons/add-playlist-icon.png", "items": "Créer une playlist" },  
-    { "icons": "../assets/icons/like-icon.png", "items": "Titres likés" }
+    { "icons": "../assets/icons/home-icon.png", "items": "Accueil", "url": "Home.html" }, 
+    { "icons": "../assets/icons/search-icon.png", "items": "Rechercher", "url": "Home.html?search" }, 
+    { "icons": "../assets/icons/bibli-icon.png", "items": "Bibliothèque", "url": "Home.html?library" }, 
+    { "icons": "../assets/icons/add-playlist-icon.png", "items": "Créer une playlist", "url": "Home.html?create-playlist" },  
+    { "icons": "../assets/icons/like-icon.png", "items": "Titres likés", "url": "Home.html?music-liked" }
 ]
 
 arrayMenu.forEach((elem) => {
@@ -23,6 +23,7 @@ arrayMenu.forEach((elem) => {
 
     icons.setAttribute("src", elem.icons);
     icons.setAttribute("alt", "Icône" + elem.items);
+    linkMenu.setAttribute("href", elem.url)
 
     menu.appendChild(menuItems);
     menuItems.appendChild(linkMenu);
