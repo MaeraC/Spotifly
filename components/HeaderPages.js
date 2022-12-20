@@ -1,13 +1,13 @@
-const dashboard = document.querySelector(".dashboard");
-const headerDashboard = document.createElement("div");
-const arrows = document.createElement("div");
-const arrowLeft = document.createElement("img");
-const arrowRight = document.createElement("img");
-const profileAccount = document.createElement("div");
-const userIcon = document.createElement("img");
-const userBox = document.createElement("div");
-const userName = document.createElement("span");
-const arrowDown = document.createElement("img");
+const dashboard                     = document.querySelector(".dashboard");
+const headerDashboard               = document.createElement("div");
+const arrows                        = document.createElement("div");
+const arrowLeft                     = document.createElement("img");
+const arrowRight                    = document.createElement("img");
+const profileAccount                = document.createElement("div");
+const userIcon                      = document.createElement("img");
+const userBox                       = document.createElement("div");
+const userName                      = document.createElement("span");
+const arrowDown                     = document.createElement("img");
 
 arrowLeft.setAttribute("src", "../assets/icons/arrow-left.png");
 arrowLeft.setAttribute("alt", "Page précedente");
@@ -22,8 +22,9 @@ headerDashboard.classList.add("dashboard__header");
 arrows.classList.add("dashboard__header__arrows");
 profileAccount.classList.add("dashboard__header__profile-account");
 userBox.classList.add("dashboard__header__profile-account__user-box");
-userIcon.classList.add("dashboard__header__profile-account__user-box__user-icon")
-userName.textContent = "User Name";
+userIcon.classList.add("dashboard__header__profile-account__user-box__user-icon");
+
+userName.textContent                = "User Name";
 
 dashboard.appendChild(headerDashboard);
 headerDashboard.appendChild(arrows);

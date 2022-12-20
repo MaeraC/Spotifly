@@ -1,11 +1,11 @@
-const header                = document.querySelector(".header");
-const nav                   = document.createElement("nav");
-const logoWhite             = document.createElement("div");
-const logo                  = document.createElement("img");
-const title                 = document.createElement("h1");
-const menu                  = document.createElement("ul");
+const header                        = document.querySelector(".header");
+const nav                           = document.createElement("nav");
+const logoWhite                     = document.createElement("div");
+const logo                          = document.createElement("img");
+const title                         = document.createElement("h1");
+const menu                          = document.createElement("ul");
 
-const arrayMenu             = [
+const arrayMenu                     = [
     { "icons": "../assets/icons/home-icon.png", "items": "Accueil", "url": "Home.html" }, 
     { "icons": "../assets/icons/search-icon.png", "items": "Rechercher", "url": "Home.html?search" }, 
     { "icons": "../assets/icons/bibli-icon.png", "items": "Bibliothèque", "url": "Home.html?library" }, 
@@ -14,12 +14,12 @@ const arrayMenu             = [
 ]
 
 arrayMenu.forEach((elem) => {
-    const menuItems         = document.createElement("li");
-    const linkMenu          = document.createElement("a");
-    const icons             = document.createElement("img");
-    const items             = document.createElement("span");
+    const menuItems                 = document.createElement("li");
+    const linkMenu                  = document.createElement("a");
+    const icons                     = document.createElement("img");
+    const items                     = document.createElement("span");
 
-    items.textContent       = elem.items;
+    items.textContent               = elem.items;
 
     icons.setAttribute("src", elem.icons);
     icons.setAttribute("alt", "Icône" + elem.items);
@@ -40,10 +40,10 @@ logoWhite.classList.add("header__nav__logoWhite");
 title.classList.add("header__nav__logoWhite__title");
 menu.classList.add("header__nav__menu");
 
-const menuItemClass = menu.children[2];
+const menuItemClass                 = menu.children[2];
 menuItemClass.classList.add("add-border");
 
-title.textContent           = "Spotifly";
+title.textContent                   = "Spotifly";
 
 header.appendChild(nav);
 nav.appendChild(logoWhite);
