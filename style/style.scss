@@ -156,11 +156,14 @@ body {
 .dashboard {
     width: 75%;
     &__header {
-        width: 100%;
+        position: fixed;
+        top: 0;
+        width: 75%;
         height: 90px;
         padding: 20px 30px;
         display: flex;
         justify-content: space-between;
+        background-color: #161616;
         &__arrows {
             display: flex;
             img {
@@ -179,6 +182,7 @@ body {
             height: 30px;
             border-radius: 20px;
             padding-right: 15px;
+            cursor: pointer;
             &__user-box {
                 align-items: center;
                 display: flex;
@@ -201,6 +205,28 @@ body {
         }
     }
 }
+.profile-menu {
+    position: absolute;
+    right: 20px;
+    background-color: #2e2e2e; 
+    list-style-type: none;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 200px;
+    display: none;
+    li {
+        padding: 10px; 
+        font-size: 14px;
+        cursor: pointer;
+    }
+    li:hover {
+        background: #414141;
+    }
+}
+.display {
+    display: flex;
+}
 
 // DASHBOARD SEARCH /////////////////////////////////
 
@@ -209,6 +235,7 @@ body {
     overflow: scroll;
     height: 87vh;
     padding-bottom: 60px;
+    padding-top: 90px;
     form {
         position: absolute;
         top: 15px;
@@ -259,5 +286,42 @@ body {
                 color: #797979;
             }
         }
+        .track-card{
+            height: 300px;
+            img {
+                border-radius: 5px;
+            }
+            .track-ya {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                span {
+                    margin-right: 5px;
+                    font-size: 15px;
+                }
+            }
+
+        } 
+        
+    }
+}
+.dashboard .results-box .results-box__content {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border-radius: 0;
+    background: none;
+    img {
+        width: 20%;
+        margin: 15px;
+        border-radius: 5px;
+        height: 200px;
+        cursor: pointer;
     }
 }

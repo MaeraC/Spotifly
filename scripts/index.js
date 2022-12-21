@@ -26,18 +26,18 @@ textConnect.textContent             = "Pour continuer, connectez-vous à Spotifl
 btnLogIn.textContent                = "SE CONNECTER";
 
 if (!token && hash) {
-    token = hash.substring(1).split("&").find(elt => elt.startsWith("access_token")).split("=")[1]
-    window.location.hash = ""
+    token                           = hash.substring(1).split("&").find(elt => elt.startsWith("access_token")).split("=")[1]
+    window.location.hash            = ""
     // Met le token dans le localStorage
     window.localStorage.setItem("token", token)
 }
 
 function logOut() {
-    token = "";
+    token                           = "";
     window.localStorage.removeItem("token");
 };
 
-if (!token) {
+if (token) {
     // Redirige vers le compte Spotifly
     LinkConnect.setAttribute("href", `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`);
 }

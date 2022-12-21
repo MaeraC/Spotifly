@@ -143,11 +143,14 @@ body {
   width: 75%;
 }
 .dashboard__header {
-  width: 100%;
+  position: fixed;
+  top: 0;
+  width: 75%;
   height: 90px;
   padding: 20px 30px;
   display: flex;
   justify-content: space-between;
+  background-color: #161616;
 }
 .dashboard__header__arrows {
   display: flex;
@@ -167,6 +170,7 @@ body {
   height: 30px;
   border-radius: 20px;
   padding-right: 15px;
+  cursor: pointer;
 }
 .dashboard__header__profile-account__user-box {
   align-items: center;
@@ -188,11 +192,36 @@ body {
   width: 18px;
 }
 
+.profile-menu {
+  position: absolute;
+  right: 20px;
+  background-color: #2e2e2e;
+  list-style-type: none;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 200px;
+  display: none;
+}
+.profile-menu li {
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.profile-menu li:hover {
+  background: #414141;
+}
+
+.display {
+  display: flex;
+}
+
 .dashboard {
   position: relative;
   overflow: scroll;
   height: 87vh;
   padding-bottom: 60px;
+  padding-top: 90px;
 }
 .dashboard form {
   position: absolute;
@@ -244,6 +273,42 @@ body {
   font-size: 13px;
   margin-top: 10px;
   color: #797979;
+}
+.dashboard .results-box .track-card {
+  height: 300px;
+}
+.dashboard .results-box .track-card img {
+  border-radius: 5px;
+}
+.dashboard .results-box .track-card .track-ya {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.dashboard .results-box .track-card .track-ya span {
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.dashboard .results-box .results-box__content {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-radius: 0;
+  background: none;
+}
+.dashboard .results-box .results-box__content img {
+  width: 20%;
+  margin: 15px;
+  border-radius: 5px;
+  height: 200px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
