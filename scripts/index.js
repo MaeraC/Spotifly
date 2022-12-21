@@ -36,11 +36,12 @@ if (!token && hash) {
 console.log(token);
 
 function logOut() {
-    token                           = "";
-    window.localStorage.removeItem("token");
+    //token                           = "";
+    //window.localStorage.removeItem("token");
+    console.log(token)
 };
 
-if (token) {
+if (!token) {
     // Redirige vers le compte Spotifly
     LinkConnect.setAttribute("href", `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`);
 }
