@@ -18,8 +18,10 @@ const RESPONSE_TYPE                 = "token";
 const hash                          = window.location.hash // Récupère le token dans l'url
 let token                           = window.localStorage.getItem("token") // Récupère le token du localStorage
 
+console.log(token);
+
 LogoWhite.classList.add("header-connexion__logo-white");
-logo.setAttribute("src", "https://maerac.github.io/Spotifly/assets/icons/logo-white.png")
+logo.setAttribute("src", "https://maerac.github.io/Spotifly/assets/icons/logo-white.png");
 
 title.textContent                   = "Spotifly";
 textConnect.textContent             = "Pour continuer, connectez-vous à Spotifly.";
