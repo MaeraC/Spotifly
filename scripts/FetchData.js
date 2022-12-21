@@ -21,7 +21,30 @@ const searchArtists                     = async () => {
     arrayArtists.push(data.artists.items);
     arrayTracks.push(data.tracks.items);
 }
+/*
+const getCategoryPlaylists              = async () => {
+    const {data}                        = await fetch("https://api.spotify.com/v1/browse/party/playlists", {
+        headers: { Authorization: `Bearer ${token}`},
+        params: { country: "FR" }
+    })
+
+    console.log(data)
+}*/
+
+if (token) {
+    getPlaylist()
+}
+function getPlaylist() {
+    fetch("https://api.spotify.com/v1/", {
+        header: { Authorization: `Bearer ${token}`} 
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+}
+
 console.log(token)
+//getCategoryPlaylists();
+
 if (token) {
     const inputSearch                   = document.querySelector(".input-search");
     const resultsBox                    = document.querySelector(".results-box");

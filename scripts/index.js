@@ -9,7 +9,7 @@ const btnLogIn                      = document.createElement("button");
 const btnLogOut                     = document.createElement("button");
 
 const CLIENT_ID                     = "4ecc34c264bc4531828ff67b0dbaf91c";
-const REDIRECT_URI                  = "http://127.0.0.1:5500/pages/Home.html";
+const REDIRECT_URI                  = "https://maerac.github.io/Spotifly/pages/Home.html";
 const AUTH_ENDPOINT                 = "https://accounts.spotify.com/authorize";
 const RESPONSE_TYPE                 = "token";
 
@@ -19,7 +19,7 @@ const hash                          = window.location.hash // Récupère le toke
 let token                           = window.localStorage.getItem("token") // Récupère le token du localStorage
 
 LogoWhite.classList.add("header-connexion__logo-white");
-logo.setAttribute("src", "../assets/icons/logo-white.png")
+logo.setAttribute("src", "https://maerac.github.io/Spotifly/assets/icons/logo-white.png")
 
 title.textContent                   = "Spotifly";
 textConnect.textContent             = "Pour continuer, connectez-vous à Spotifly.";
