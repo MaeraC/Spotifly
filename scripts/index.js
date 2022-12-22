@@ -46,10 +46,10 @@ if (!token) {
     LinkConnect.setAttribute("href", `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`);
 }
 else {
-    btnLogOut.textContent               = "SE DECONNECTER";
+    btnLogOut.textContent               = "SE CONNECTER";
     btnLogOut.style.display             = "flex";
     btnLogIn.style.display              = "none";
-    btnLogOut.classList.add("btn-logout");
+    btnLogOut.classList.add("btn-login");
     bodyConnexion.appendChild(btnLogOut);
 
     btnLogOut.addEventListener("click", () => {
