@@ -39,6 +39,7 @@ function logOut() {
     //token                           = "";
     //window.localStorage.removeItem("token");
     console.log(token)
+    LinkConnect.setAttribute("href", `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`);
 };
 
 if (!token) {
