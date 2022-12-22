@@ -9,7 +9,7 @@ const btnLogIn                      = document.createElement("button");
 const btnLogOut                     = document.createElement("button");
 
 const CLIENT_ID                     = "4ecc34c264bc4531828ff67b0dbaf91c";
-const REDIRECT_URI                  = "https://maerac.github.io/Spotifly/pages/Home.html";
+const REDIRECT_URI                  = "https://maerac.github.io/Spotifly/pages/Home.html?search";
 const AUTH_ENDPOINT                 = "https://accounts.spotify.com/authorize";
 const RESPONSE_TYPE                 = "token";
 
