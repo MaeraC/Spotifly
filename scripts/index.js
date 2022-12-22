@@ -49,6 +49,7 @@ if (!token) {
 else {
     btnLogOut.textContent               = "SE CONNECTER";
     btnLogOut.style.display             = "flex";
+    btnLogOut.style.justifyContent      = "center"
     btnLogIn.style.display              = "none";
     btnLogOut.classList.add("btn-login");
     bodyConnexion.appendChild(btnLogOut);
